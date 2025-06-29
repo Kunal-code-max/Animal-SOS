@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal SOS</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-home">
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="index.html">Report</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Animal SOS</h1>
+    <p>Report animal emergencies and provide detailed health descriptions.</p>
+    <p>Nearby animal welfare organizations will be notified and help the animal as soon as possible.</p>
+  </header>
+  <section>
+    <h2>Animal Welfare</h2>
+   <form id="animal-health-form" method="POST" >
+
+
+      <label for="animal-type">Animal Type</label>
+      <select id="animal-type" name="animalType" required>
+        <option value="" disabled selected>Select type</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Cow">Cow</option>
+        <option value="Bird">Bird</option>
+        <option value="Buffalo">Buffalo</option>
+      </select>
+      <label for="count">Number of animals needing help</label>
+      <input type="number" id="count" name="count" required>
+      <label for="condition">Conditions</label>
+      <select id="condition" name="condition" required>
+        <option value="" disabled selected>Select condition</option>
+        <option value="anxious">Anxious</option>
+        <option value="aggressive">Aggressive</option>
+        <option value="injured">Injured</option>
+        <option value="sick">Sick</option>
+        <option value="unknown">Unknown</option>
+      </select>
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" required>
+      <label for="name">Reporter Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      <button type="submit">Submit Report</button>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

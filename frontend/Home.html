@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal SOS | Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <header class="main-header">
+    <nav>
+      <ul class="navbar">
+         <li><a href="Home.html"class="active">Home</a></li>
+        <li><a href="index.html" >Report</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Animal SOS</h1>
+    <p>Your support saves lives. Report injured or abandoned animals easily.</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Be a Hero for Animals</h2>
+      <p>Join us in making the world a safer place for animals.</p>
+      <a href="index.html" class="btn">Report Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://www.shutterstock.com/image-photo/lonely-cute-brown-puppy-sitting-600nw-2239428987.jpg" alt="Dog in care" />
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Why Use Animal SOS?</h2>
+    <div class="cards">
+      <div class="card fade-in">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3c9mpYp-PbC_OIvZEJsDFkOFFvNhZf2-AfxPXweiwB4kSA-6CzD6DY50wdRg0ifKIKc4&usqp=CAU" alt="Rescue Team">
+        <h3>Rescue Network</h3>
+        <p>Connects instantly with nearby animal rescuers and shelters.</p>
+      </div>
+      <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" alt="Cat in hands">
+        <h3>Live Tracking</h3>
+        <p>Track reported animal cases using live location mapping.</p>
+      </div>
+      <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006" alt="Puppy eye">
+        <h3>Community Driven</h3>
+        <p>Powered by volunteers, animal lovers, and local NGOs.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Animal SOS. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Simple fade-in on scroll
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

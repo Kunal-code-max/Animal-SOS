@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.bg-home {
+  background-image: url('https://img.freepik.com/free-vector/hand-drawn-animal-rescue-illustration_23-2150219136.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  background-color:  #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  background-color: ;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+form input,
+form select {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #47c5ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #3e94e5;
+}
+
+//about

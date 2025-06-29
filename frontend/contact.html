@@ -1,0 +1,40 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="index.html">Report</a></li>
+        
+        <li><a href="about.html">About</a></li>
+        
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Animal SOS</h1>
+    <p>Report animal emergencies and provide detailed health descriptions.</p>
+    <p>Nearby animal welfare organizations will be notified and help the animal as soon as possible.</p>
+  </header>
+
+  <!-- Contact form stays the same -->
+
+ <form id="contact-form" method="POST">
+         <label for="names" >Name</label>
+         <input type="text" id="names" name="names" required>
+         <label for="email">email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phones">phone-no</label>
+           <input type="tel" id="phones" name="phones" pattern="[0-9]{10}" required>
+           <label for="message">message</label>
+            <input type="text" id="message" name="message" required>
+           <button type="submits">Contact</button>
+      </form>
+      <script src="script.js"></script>
+      </body>
+</html>
